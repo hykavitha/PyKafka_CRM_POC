@@ -55,13 +55,7 @@ class msgTranlator:
         producer.send(tpc_nm, value=msg_val, headers=msg_hdr_lst)
         producer.flush()
 
-def main():
-    while(True):
-        mt = msgTranlator()
-        mt.tran_consume_msg()
 
-if __name__ == "__main__":
-    main()
 
 
 
